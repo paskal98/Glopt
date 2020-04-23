@@ -1,0 +1,16 @@
+@import 'variables/var';
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+@import 'base/title';
+@import 'base/button';
+@import 'base/header';
+@import 'base/advantages';
+@import 'base/media';

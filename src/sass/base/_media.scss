@@ -1,0 +1,161 @@
+@media (max-width: 1170px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .nav{
+        flex-direction: column;
+        align-items: flex-start;
+        &__wrapper{
+            width: 100%;
+            &:nth-child(1){
+                justify-content: space-between;
+            }
+            &:nth-child(2){
+                justify-content: flex-end;
+            }
+        }
+    }
+    .header{
+        &__adv{
+            display: grid;
+            grid-template-columns: repeat(2,262px);
+            grid-auto-rows: 160px;
+            column-gap: 20px;
+            align-items: flex-start;
+            justify-content: center;
+            
+        }
+    }
+
+}
+
+
+@media (max-width: 992px){
+    .menu{
+        li{
+            a{
+                font-size: 14px;
+            }
+        }
+    }
+    .header{
+        &__promo{
+            margin-top: 30px;
+        }
+        &__maintitle{
+            font-size: 23px;
+        }
+        &__title{
+            font-size: 56px;
+        }
+        &__subtitle{
+            font-size: 33px;
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .menu{
+        display: none;
+    }
+    .nav{
+        align-items: center;
+        flex-direction: row;
+        &__wrapper{
+            width: inherit;
+        }
+    }
+    .header{
+        &__maintitle{
+            font-size: 19px;
+        }
+        &__title{
+            font-size: 42px;
+        }
+        &__subtitle{
+            margin-top: -10px;
+            font-size: 26px;
+        }
+    }
+    .title{
+        font-size: 22px;
+    }
+    .advantages{
+        &__items{
+           grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media (max-width: 575px){
+
+    .nav{
+        flex-direction: column;
+        &__contacts{
+            margin: 15px 0 15px 0;
+            div{
+                text-align: center;
+            }
+        }
+        &__wrapper{
+            &:nth-child(2){
+                flex-direction: column;
+            }
+        }
+    }
+    .header{
+        &__maintitle{
+            font-size: 16px;
+        }
+        &__title{
+            margin-top: 0;
+            font-size: 36px;
+        }
+        &__subtitle{
+            margin-top: -10px;
+            font-size: 24px;
+        }
+        &__adv{
+            grid-template-columns: repeat(1, 262px);
+            column-gap: 0;
+        }
+    }
+
+    .title{
+        font-size: 19px;
+    }
+    .advantages{
+        &__descr{
+            &_title{
+                font-size: 14px;
+            }
+            &_text{
+                font-size: 13px;
+            }
+        }
+    }
+    
+}
+
+
+@media (max-width: 319px){
+    .container{
+        padding: 0 10px 0 10px;
+    }
+    .header{
+        &__adv{
+            grid-template-columns: repeat(1,230px);
+            &-item{
+                width: 230px;
+                &-descr{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .button-big{
+        width: 208px;
+    }
+}
